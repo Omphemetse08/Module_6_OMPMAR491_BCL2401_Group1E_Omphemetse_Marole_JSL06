@@ -1,6 +1,6 @@
 // Sample menu data (Consider fetching this data from a server in a real-world scenario)
 const menu = {
-  Starters: ["Garlic Bread", "Bruschetta"],
+  Starters: ["Garlic Bread (R20.00)", "Bruschetta"],
   MainCourses: ["Margherita Pizza", "Spaghetti Carbonara"],
   Desserts: ["Tiramisu", "Cheesecake"],
 };
@@ -47,8 +47,8 @@ function displayMenuItems(menu) {
 // Callback function for adding an item to the order
 function addToOrder(itemName) {
   // Get the order items list and the order total element from the HTML
-  const orderItemsList = document.getElementById("orderItems");
-  const orderTotalElement = document.getElementById("orderTotal");
+  const orderItemsList = document.getElementById("order-items");
+  const orderTotalElement = document.getElementById("order-total");
 
   // Create a list item for the order
   const listItem = document.createElement("li");
@@ -61,10 +61,10 @@ function addToOrder(itemName) {
 
   // Calculate and update the total price
   let totalPrice = parseInt(orderTotalElement.textContent) || 0;
-  totalPrice += 10;
+  totalPrice += 50;
 
   // Update the text content of the order total element with the new total
-  orderTotalElement.tectContent = totalPrice;
+  orderTotalElement.textContent = totalPrice;
 }
 
 // Function to initialize the menu system
