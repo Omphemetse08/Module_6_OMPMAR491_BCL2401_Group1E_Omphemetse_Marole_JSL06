@@ -39,3 +39,7 @@
 - Allow for quantity selection.
 - Implement functionality for removing items from the order.
 - Connect it to a backend system for order processing and payment.
+
+# challenges
+
+- when i was pressing the item to addToOrder was not running.
